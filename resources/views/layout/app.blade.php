@@ -50,7 +50,7 @@
                             class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 {{-- <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -60,6 +60,7 @@
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Navbar Search -->
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
@@ -81,7 +82,7 @@
                         </form>
                     </div>
                 </li>
-
+            -->
                 <!-- Messages Dropdown Menu -->
                 {{-- <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
@@ -176,12 +177,26 @@
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true"
-                        href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                    </a>
-                </li> --}}
+                 <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <div class="dropdown-header text-center">
+                                <img class="profile-user-img img-fluid img-circle" src="{{asset('/')}}public/dist/img/user4-128x128.jpg" alt="User profile picture">
+                                <h3 class="profile-username text-center">Alexander Pierce</h3>
+                                <p class="text-muted text-center">Software Engineer</p>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users-cog mr-2"></i>Account
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer text-danger"> <i class="fas fa-power-off"> SIGN OUT</i> </a>
+                        </div>
+                    </li>
+                </li>
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -189,26 +204,27 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="#" class="brand-link">
                 <img src="{{ asset('/') }}public/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3 ml-5 mr-3" style="opacity: .8">
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Bilqolam</span>
             </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                {{-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('/') }}public/dist/img/user2-160x160.jpg" class="img-circle elevation-2"
+                        <img src="{{asset('/')}}public/dist/img/user4-128x128.jpg" class="img-circle elevation-2"
                             alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
-                </div> --}}
+                </div> 
 
                 <!-- SidebarSearch Form -->
+                <!--
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="input-group" data-widget="sidebar-search">
                         <input class="form-control form-control-sidebar" type="search" placeholder="Search"
@@ -220,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-
+            -->
                 <!-- Sidebar Menu -->
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
@@ -228,9 +244,112 @@
                             <!-- Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library -->
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link active">
+                                <a href="#" class="nav-link active">
                                     <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-header">Master</li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-compass"></i>
+                                    <p>Data Master</p>
+                                    <i class="right fas fa-angle-left"></i>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-copy nav-icon"></i>
+                                            <p>Data Jilid</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-chess-king nav-icon"></i>
+                                            <p>Data Methode</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="	fas fa-scroll nav-icon"></i>
+                                            <p>Data Korcam / Kortan</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-school nav-icon"></i>
+                                            <p>Data Lembaga</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-chalkboard-teacher nav-icon"></i>
+                                            <p>Data Guru</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-user-graduate nav-icon"></i>
+                                            <p>Data Santri</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fab fa-periscope"></i>
+                                    <p>Lokasi</p>
+                                    <i class="right fas fa-angle-left"></i>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fab fa-periscope nav-icon"></i>
+                                            <p>Data Kota / Kabupaten</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fab fa-periscope nav-icon"></i>
+                                            <p>Data Kecamatan</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fab fa-periscope nav-icon"></i>
+                                            <p>Data Kelurahan</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-header">Lembaga</li>
+
+                            <li class="nav-header">Others</li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>Users</p>
+                                    <i class="right fas fa-angle-left"></i>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-users nav-icon"></i>
+                                            <p>Users</p>
+                                        </a>
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-bolt nav-icon"></i>
+                                            <p>Users Activity</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-copy"></i>
+                                    <p>Laporan</p>
+                                    <i class="right fas fa-angle-left"></i>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-copy nav-icon"></i>
+                                            <p>Laporan Users</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-power-off"></i>
+                                    <p>SignOut</p>
                                 </a>
                             </li>
                             {{-- <li class="nav-item menu-open">
@@ -942,7 +1061,8 @@
     <!-- AdminLTE App -->
     <script src="{{ asset('/') }}public/dist/js/adminlte.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="{{ asset('/') }}public/dist/js/demo.js"></script>
+
+    <!--<script src="{{ asset('/') }}public/dist/js/demo.js"></script>-->
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('/') }}public/dist/js/pages/dashboard.js"></script>
 </body>
